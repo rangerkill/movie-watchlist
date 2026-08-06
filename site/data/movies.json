@@ -1,0 +1,36 @@
+[
+  {
+    "id": "tmdb-969681",
+    "tmdb_id": 969681,
+    "title": "蜘蛛侠：崭新之日",
+    "original_title": "Spider-Man: Brand New Day",
+    "overview": "漫威电影宇宙蜘蛛侠系列的第四部作品。世界已经忘记彼得·帕克，而他将以真正独立的蜘蛛侠身份，面对崭新生活与新的城市危机。",
+    "poster": "https://image.tmdb.org/t/p/original/9JCQtDCSpPR2ld55yNlEg1VwcQo.jpg",
+    "release_date": "2026-07-31",
+    "runtime": null,
+    "region": "美国",
+    "genres": ["动作", "科幻", "冒险"],
+    "director": "德斯汀·克里顿",
+    "cast": ["汤姆·赫兰德", "赞达亚", "乔·博恩瑟", "萨迪·辛克"],
+    "status": "watchlist",
+    "added_date": "2026-08-06",
+    "source": "TMDB"
+  },
+  {
+    "id": "cn-2258946",
+    "tmdb_id": null,
+    "title": "年会不能停！2",
+    "original_title": "Make ZhongHe Great Again",
+    "overview": "当“天选之子”刘奔遇上“天降搭子”马杰，这对天选上班搭子联手上阵，在荒诞又真实的职场规则里寻找升职加薪的新解法。",
+    "poster": "https://cms-emer-res.cctvnews.cctv.com/image/1005/process/0d496634dd2d4e0098a0320c93619ff1.jpg",
+    "release_date": "2026-08-01",
+    "runtime": 125,
+    "region": "中国大陆",
+    "genres": ["喜剧", "剧情", "职场"],
+    "director": "董润年",
+    "cast": ["张若昀", "白客", "高叶", "大鹏", "庄达菲"],
+    "status": "watchlist",
+    "added_date": "2026-08-06",
+    "source": "1905电影网"
+  }
+]
