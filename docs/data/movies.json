@@ -14,6 +14,16 @@
     "cast": ["汤姆·赫兰德", "赞达亚", "乔·博恩瑟", "萨迪·辛克"],
     "status": "watchlist",
     "added_date": "2026-08-06",
+    "added_at": "2026-08-06T00:00:00+08:00",
+    "watched_at": null,
+    "douban_rating": 7.8,
+    "douban_url": "https://movie.douban.com/subject/36246195/",
+    "rating_updated_at": "2026-08-07",
+    "priority": "最想看",
+    "recommendation": "想看看没有复联光环后的彼得·帕克，能否真正成为独当一面的街头英雄。",
+    "moods": ["想看大片", "周末放松"],
+    "availability": "院线热映",
+    "trailer_url": "https://movie.douban.com/trailer/325468/",
     "source": "TMDB"
   },
   {
@@ -31,6 +41,16 @@
     "cast": ["张若昀", "白客", "高叶", "大鹏", "庄达菲"],
     "status": "watchlist",
     "added_date": "2026-08-06",
+    "added_at": "2026-08-06T00:00:00+08:00",
+    "watched_at": null,
+    "douban_rating": 6.8,
+    "douban_url": "https://movie.douban.com/subject/36850814/",
+    "rating_updated_at": "2026-08-07",
+    "priority": "想看",
+    "recommendation": "继续看这套职场喜剧怎么把日常荒诞拍成让打工人会心一笑的故事。",
+    "moods": ["轻松一下", "下班后"],
+    "availability": "院线热映",
+    "trailer_url": "https://search.bilibili.com/all?keyword=%E5%B9%B4%E4%BC%9A%E4%B8%8D%E8%83%BD%E5%81%9C2%20%E9%A2%84%E5%91%8A%E7%89%87",
     "source": "1905电影网"
   },
   {
@@ -48,6 +68,16 @@
     "cast": ["李思潼", "王彦桐", "吴少卿", "郑润奇", "王晓慧"],
     "status": "watchlist",
     "added_date": "2026-08-07",
+    "added_at": "2026-08-07T00:00:00+08:00",
+    "watched_at": null,
+    "douban_rating": 9.3,
+    "douban_url": "https://movie.douban.com/subject/37116446/",
+    "rating_updated_at": "2026-08-07",
+    "priority": "最想看",
+    "recommendation": "一封侨批牵起半个世纪的守望，适合留给一个不赶时间的晚上，和家人一起看。",
+    "moods": ["想被感动", "和家人看"],
+    "availability": "院线已上映",
+    "trailer_url": "https://search.bilibili.com/all?keyword=%E7%BB%99%E9%98%BF%E5%AC%B7%E7%9A%84%E6%83%85%E4%B9%A6%20%E9%A2%84%E5%91%8A%E7%89%87",
     "source": "1905电影网"
   }
 ]
