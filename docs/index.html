@@ -3,95 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#080a0f" />
-    <meta
-      name="description"
-      content="Ranger 的私人待看电影墙，收藏每周想看的好电影。"
-    />
+    <meta name="theme-color" content="#07090d" />
+    <meta name="description" content="Ranger 的私人电影片单：记录待看、已看时间、主演、豆瓣评分与每周推荐。" />
+    <meta property="og:title" content="放映清单 · 今晚，想看什么？" />
+    <meta property="og:description" content="一份会记住观看进度的私人电影片单。" />
     <title>放映清单 · 我的待看电影</title>
     <link rel="preconnect" href="https://image.tmdb.org" />
-    <link rel="preconnect" href="https://cms-emer-res.cctvnews.cctv.com" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="ambient ambient-one" aria-hidden="true"></div>
-    <div class="ambient ambient-two" aria-hidden="true"></div>
-
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回顶部">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span>放映清单</span>
-      </a>
-      <div class="header-meta">
-        <span class="live-dot" aria-hidden="true"></span>
-        <span>私人片单</span>
-      </div>
+    <div class="ambient ambientOne" aria-hidden="true"></div>
+    <div class="ambient ambientTwo" aria-hidden="true"></div>
+    <header class="siteHeader">
+      <a class="brand" href="#top" aria-label="返回顶部"><span class="brandMark" aria-hidden="true"><i></i><i></i><i></i></span><span>放映清单</span></a>
+      <nav aria-label="页面导航"><a href="#new">新加入</a><a href="#all">全部</a><a href="#watched">已看</a></nav>
+      <div class="headerMeta"><span class="liveDot" aria-hidden="true"></span> 私人片单</div>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">MY WATCHLIST · 2026</p>
-        <h1 id="page-title">下一部，<br /><span>想看什么？</span></h1>
-        <p class="hero-copy">
-          把每周遇见的好电影留在这里。无需记住片名，打开这面墙，就知道下次该看什么。
-        </p>
+      <section class="featuredHero" id="featured" aria-live="polite"></section>
 
-        <div class="summary" aria-label="片单概况">
-          <div class="summary-item">
-            <strong id="watch-count">—</strong>
-            <span>部待看</span>
-          </div>
-          <div class="summary-divider" aria-hidden="true"></div>
-          <div class="summary-item">
-            <strong id="genre-count">—</strong>
-            <span>种类型</span>
-          </div>
-          <div class="summary-divider" aria-hidden="true"></div>
-          <div class="summary-item summary-date">
-            <strong id="updated-date">—</strong>
-            <span>最近更新</span>
-          </div>
-        </div>
+      <section class="contentSection" id="new">
+        <div class="sectionHeading"><div><p class="sectionKicker">JUST ADDED</p><h2>本周新加入</h2></div><p>刚放进片单的新鲜候选，先从这里开始挑。</p></div>
+        <div class="spotlightRow" id="new-list"></div>
       </section>
 
-      <section class="library" aria-labelledby="library-title">
-        <div class="library-heading">
-          <div>
-            <p class="section-kicker">CURATED FOR LATER</p>
-            <h2 id="library-title">待看电影</h2>
-          </div>
-          <div class="controls">
-            <label class="search-box">
-              <span class="search-icon" aria-hidden="true"></span>
-              <span class="sr-only">搜索电影</span>
-              <input id="search-input" type="search" placeholder="搜索片名、导演或类型" autocomplete="off" />
-            </label>
-            <div class="filters" id="filters" aria-label="按类型筛选"></div>
-          </div>
-        </div>
+      <section class="contentSection prioritySection">
+        <div class="sectionHeading"><div><p class="sectionKicker">TOP PRIORITY</p><h2>最想看的</h2></div><button class="textButton" type="button" data-random>帮我随机选一部 →</button></div>
+        <div class="priorityList" id="priority-list"></div>
+      </section>
 
-        <div id="movie-grid" class="movie-grid" aria-live="polite"></div>
-        <div id="empty-state" class="empty-state" hidden>
-          <span>没有找到匹配的电影</span>
-          <button id="reset-search" type="button">清除筛选</button>
+      <section class="contentSection library" id="all">
+        <div class="libraryHeading">
+          <div><p class="sectionKicker">THE FULL LIST</p><h2>全部片单</h2></div>
+          <div class="controls">
+            <label class="searchBox"><span aria-hidden="true">⌕</span><span class="srOnly">搜索电影</span><input id="search-input" type="search" placeholder="搜索片名、导演或主演" autocomplete="off" /></label>
+            <div class="statusTabs" id="status-tabs" aria-label="按状态筛选"></div>
+          </div>
         </div>
+        <div class="filters" id="filters" aria-label="按类型筛选"></div>
+        <div class="movieGrid" id="movie-grid" aria-live="polite"></div>
+        <div class="emptyState" id="empty-state" hidden><p>没有找到匹配的电影</p><button type="button" data-reset>清除筛选</button></div>
+      </section>
+
+      <section class="contentSection watchedSection" id="watched">
+        <div class="sectionHeading"><div><p class="sectionKicker">WATCHED ARCHIVE</p><h2>已看记录</h2></div><p>每次勾选“已看”，这里会自动留下完成时间。</p></div>
+        <div id="watched-list"></div>
       </section>
     </main>
 
-    <footer>
-      <p>一份慢慢变长的私人片单。</p>
-      <p>
-        电影资料由
-        <a href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">TMDB</a>
-        等公开资料源补全。本网站与 TMDB 无隶属或认证关系。
-      </p>
-    </footer>
+    <footer><p>一份会记住观看进度的私人片单。</p><p>电影资料来自 <a href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">TMDB</a>、豆瓣等公开页面；评分会随片单更新同步查询。</p></footer>
 
-    <dialog id="movie-dialog" class="movie-dialog">
-      <button class="dialog-close" id="dialog-close" type="button" aria-label="关闭详情">×</button>
+    <dialog class="movieDialog" id="movie-dialog">
+      <button class="dialogClose" id="dialog-close" type="button" aria-label="关闭详情">×</button>
       <div id="dialog-content"></div>
     </dialog>
-
     <script src="./app.js" defer></script>
   </body>
 </html>
