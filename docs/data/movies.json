@@ -32,5 +32,22 @@
     "status": "watchlist",
     "added_date": "2026-08-06",
     "source": "1905电影网"
+  },
+  {
+    "id": "cn-2259123",
+    "tmdb_id": null,
+    "title": "给阿嬷的情书",
+    "original_title": "Dear You",
+    "overview": "潮汕阿嬷叶淑柔一直守着平淡的日子。孙子晓伟因债务缠身远赴泰国寻找阿公，却意外揭开一段由侨批维系、跨越半个世纪的守望与情义。",
+    "poster": "https://img.usheru.com/eyJidWNrZXQiOiJzdGF0aWMudXNoZXJ1LmNvbSIsImtleSI6ImltZy9jaGFubmVscy93d3cudHJpbml0eWNpbmVhc2lhLmNvbS9tb3ZpZS1jdXN0b20vZGVhci15b3UtMV80MjljM2FlMC01MTc2LTQ2MjUtOTdkNS05NDJkYTkyYmVkZjlqcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIifX19",
+    "release_date": "2026-04-30",
+    "runtime": 118,
+    "region": "中国大陆",
+    "genres": ["剧情", "家庭", "爱情"],
+    "director": "蓝鸿春",
+    "cast": ["李思潼", "王彦桐", "吴少卿", "郑润奇", "王晓慧"],
+    "status": "watchlist",
+    "added_date": "2026-08-07",
+    "source": "1905电影网"
   }
 ]
